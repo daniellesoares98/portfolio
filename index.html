@@ -85,8 +85,6 @@
             <!-- Seção Sobre o autor-->
              <section id="about" class="section-container about-container">
 
-                
-
              </section>
 
              <!-- Seção Projetos do autor -->
@@ -94,34 +92,9 @@
                 <h2>Meus Projetos</h2>
 
                 <!-- Swiper Container -->
-                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                 <div class="swiper projects-swiper">
+                    <div class="swiper-wrapper">
 
-                        <article class="project-card">
-                            <figure class="project-image">
-                                <img src="./assets/icons/icons/languages/github.svg"
-                                    alt="Ícone GitHub">
-                            </figure>
-
-                            <div class="project-content">
-                                <h3>Projeto GitHub</h3>
-                                <p>Projeto desenvolvido no GitHub</p>
-
-                                <div class="project=tags">
-                                    <span class="tag">GitHub</span>
-                                </div>
-
-                                <div class="project-buttons">
-                                    <a href="#" target="_blank" class="botao botao-sm">
-                                        GitHub
-                                    </a href="#" target="_blank" class="botao outline-sm">
-                                        Deploy
-                                    </a>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div>
                  </div>
 
                  <!--Botões de navegação-->
@@ -129,7 +102,7 @@
                  <div class="swiper-button-prev"></div>
 
                  <!-- Paginação -->
-                  <div class=""swiper-pagination"></div>
+                  <div class="swiper-pagination"></div>
                 </div>
               </section>
 
@@ -155,7 +128,11 @@
                  </article>
 
                  <!-- FORMULÁRIO -->
-                  <form id="formulario">
+                  <form id="formulario" action="https://formsubmit.co/eea428df2c99859e3ba0ccb5627582f4" method="POST">
+
+                    <input type="hidden" name="_next" value="http://localhost:5500/success.html">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <label for="nome">Nome</label>
                     <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo">
                     <span id="erro-nome"></span>
@@ -187,7 +164,5 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <script src="./assets/js/script.js"></script>
-
-    </header>
 </body>
 </html>
