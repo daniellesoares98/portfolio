@@ -25,29 +25,27 @@ async function getAboutGithub() {
             <article class="about-content">
                 <h2>Sobre mim</h2>
                 <p>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+                Sou desenvolvedora em transição de carreira, atualmente cursando FullStack Java na Generation Brasil, onde venho trabalhando com Java, HTML, CSS, JavaScript, Angular, Node.js, Git/GitHub e MySQL. Antes de migrar pra tecnologia, passei anos atuando com recrutamento de profissionais de TI e também como psicóloga — experiências que me deram uma base sólida em comunicação, escuta ativa e resolução de problemas.
                 </p>
+
                 <p>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                
+                Gosto de aprofundar conhecimento além do que é ensinado, entendendo o "porquê" por trás de cada solução, não só o "como". Quero atuar como desenvolvedora FullStack, colocando a mão na massa em projetos reais, aprendendo com mentoria e code review, e crescendo tecnicamente a cada entrega.
                 </p>
 
                 <div class="about-buttons-data">
                     <div class="buttons-container">
-                        <a href="#" target="_blank" class="botao">GitHub</a>
-                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
+                        <a href="${perfil.html_url}" target="_blank" class="botao">GitHub</a>
+                        <a href="./assets/icons/icons/cv/Danielle_Soares_CV2026" target="_blank" class="botao-outline">Currículo</a>
                     </div>
 
-                    <div class="data-container">
-                        <div class="data-item">
-                            <span class="data-number">100</span>
-                            <span class="data-label">Seguidores</span>
-                        </div>
-                        <div class="data-item">
-                            <span class="data-number">10</span>
-                            <span class="data-label">Repositórios</span>
-                        </div>
+                    <div class="data-item">
+                        <span class="data-number">${perfil.followers}</span>
+                        <span class="data-label">Seguidores</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-number">${perfil.public_repos}</span>
+                        <span class="data-label">Repositórios</span>
+                    </div>
                     </div>
                 </div>
             </article>
